@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen"
+    android:background="@color/DarkBlue">
+
+    <EditText
+        android:id="@+id/EditTextValuesIn"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="244dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:hint="байт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen"
+        tools:ignore="HardcodedText,MissingConstraints,TextFields"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"/>
+
+    <EditText
+        android:id="@+id/EditTextValueFrom"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="244dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:hint="гигабайт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"/>
+
+    <Button
+        android:id="@+id/ButtonWriteResult"
+        android:layout_width="171dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/WhiteGreen"
+        android:rotationX="2"
+        android:text="Начать"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:circularflow_defaultRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <TextView
+        android:id="@+id/textViewConvertIn"
+        android:layout_width="85dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="68dp"
+        android:text="В"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewFirstScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Конвертация едениц
+        информации"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/EditTextInput"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:hint="Введите число"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"/>
+
+    <TextView
+        android:id="@+id/TextViesConvertFrom"
+        android:layout_width="85dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="312dp"
+        android:text="Из"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewResult"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="Результат"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonWriteResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextInput"
+        app:layout_constraintVertical_bias="0.69"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
