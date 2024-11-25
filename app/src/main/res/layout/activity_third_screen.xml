@@ -4,41 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondScreen"
+    tools:context=".ThirdScreen"
     android:background="@color/DarkBlue">
-
-    <EditText
-        android:id="@+id/EditTextValuesIn"
-        android:layout_width="145dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="248dp"
-        android:autofillHints=""
-        android:background="@color/white"
-        android:hint="байт"
-        android:textColor="@color/black"
-        android:textColorHint="@color/Gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen"
-        tools:ignore="HardcodedText,MissingConstraints,TextFields"
-        android:paddingLeft="20dp"/>
-
-    <EditText
-        android:id="@+id/EditTextValueFrom"
-        android:layout_width="145dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="248dp"
-        android:autofillHints=""
-        android:background="@color/white"
-        android:hint="гигабайт"
-        android:paddingLeft="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/Gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen" />
 
     <Button
         android:id="@+id/ButtonWriteResult"
@@ -47,7 +14,7 @@
         android:layout_marginBottom="68dp"
         android:background="@drawable/but"
         android:rotationX="2"
-        android:text="Вычислить"
+        android:text="Назад"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -58,18 +25,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen"
         app:layout_constraintVertical_bias="0.815" />
-
-    <TextView
-        android:id="@+id/textViewConvertIn"
-        android:layout_width="85dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="68dp"
-        android:text="В"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/TextViewFirstScreen"
@@ -105,33 +60,21 @@
         app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen" />
 
     <TextView
-        android:id="@+id/TextViesConvertFrom"
-        android:layout_width="85dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="312dp"
-        android:text="Из"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/TextViewResult"
-        android:layout_width="320dp"
+        android:id="@+id/TextViewResultThirdScreen"
+        android:layout_width="324dp"
         android:layout_height="40dp"
         android:background="@color/white"
         android:hint="Результат"
+        android:paddingLeft="20dp"
         android:text=""
         android:textColor="@color/black"
         android:textColorHint="@color/Gray"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/ButtonWriteResult"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditTextInput"
-        app:layout_constraintVertical_bias="0.687"
-        android:paddingLeft="20dp"/>
+        app:layout_constraintVertical_bias="0.077" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
