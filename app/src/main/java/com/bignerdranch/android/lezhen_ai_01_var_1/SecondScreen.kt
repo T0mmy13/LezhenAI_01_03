@@ -51,7 +51,7 @@ class SecondScreen : AppCompatActivity() {
             {
                 var FirstValues = ValuesListConvert.indexOf(ValueFrom)
                 var SecondValues = ValuesListConvert.indexOf(ValueIn)
-                if(FirstValues < SecondValues){
+                if(FirstValues > SecondValues){
                     val Numb: Int? = numb.toIntOrNull()
                     if (Numb != null) {
                         var SecondValues = ValuesListConvert.indexOf(ValueFrom)
@@ -87,6 +87,14 @@ class SecondScreen : AppCompatActivity() {
                         else{
                             TextViewResult.text = (-1).toString()
                         }
+                        editor.putString("Result", TextViewResult.text.toString())
+                        editor.apply()
+                        GlobalScope.launch(Dispatchers.Main) {
+                            delay(5000)
+                            val intent = Intent(this@SecondScreen, ThirdScreen::class.java)
+                            startActivity(intent)
+                            finish()
+                        }
                     } else {
                         text = "вы не ввели значение для перевода"
                         val toast = Toast.makeText(this, text, duration) // in Activity
@@ -105,13 +113,7 @@ class SecondScreen : AppCompatActivity() {
                 toast.show()
             }
 
-            editor.putString("Result", TextViewResult.text.toString())
-            editor.apply()
-            GlobalScope.launch(Dispatchers.Main) {
-                delay(5000)
-                val intent = Intent(this@SecondScreen, ThirdScreen::class.java)
-                startActivity(intent)
-                finish()
+
         }
     }
-}}
+}

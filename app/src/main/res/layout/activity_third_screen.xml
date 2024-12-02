@@ -43,22 +43,6 @@
         tools:ignore="HardcodedText"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/EditTextInput"
-        android:layout_width="324dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="144dp"
-        android:autofillHints=""
-        android:background="@color/white"
-        android:hint="Введите число"
-        android:paddingLeft="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/Gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen" />
-
     <TextView
         android:id="@+id/TextViewResultThirdScreen"
         android:layout_width="324dp"
@@ -69,12 +53,11 @@
         android:text=""
         android:textColor="@color/black"
         android:textColorHint="@color/Gray"
-        android:textSize="24sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/ButtonWriteResult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextInput"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFirstScreen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
